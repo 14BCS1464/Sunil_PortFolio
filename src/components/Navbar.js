@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom"; // Import useLocation
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -85,7 +85,7 @@ const Hamburger = styled.div`
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
-  z-index: 1001; /* Ensure it stays above everything */
+  z-index: 1001;
 
   @media (max-width: 768px) {
     display: block;
@@ -109,11 +109,7 @@ const Navbar = () => {
 
   // Disable scrolling when menu is open
   useEffect(() => {
-    if (open) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    document.body.style.overflow = open ? "hidden" : "auto";
   }, [open]);
 
   return (
@@ -130,7 +126,7 @@ const Navbar = () => {
             <StyledLink
               to="/about"
               onClick={() => setOpen(false)}
-              className={location.pathname === "/about" ? "active" : ""} // Highlight active link
+              className={location.pathname === "/" || location.pathname === "/about" ? "active" : ""}
             >
               About
             </StyledLink>
@@ -139,7 +135,7 @@ const Navbar = () => {
             <StyledLink
               to="/skills"
               onClick={() => setOpen(false)}
-              className={location.pathname === "/skills" ? "active" : ""} // Highlight active link
+              className={location.pathname === "/skills" ? "active" : ""}
             >
               Skills
             </StyledLink>
@@ -148,7 +144,7 @@ const Navbar = () => {
             <StyledLink
               to="/projects"
               onClick={() => setOpen(false)}
-              className={location.pathname === "/projects" ? "active" : ""} // Highlight active link
+              className={location.pathname === "/projects" ? "active" : ""}
             >
               Projects
             </StyledLink>
@@ -157,7 +153,7 @@ const Navbar = () => {
             <StyledLink
               to="/contact"
               onClick={() => setOpen(false)}
-              className={location.pathname === "/contact" ? "active" : ""} // Highlight active link
+              className={location.pathname === "/contact" ? "active" : ""}
             >
               Contact
             </StyledLink>
