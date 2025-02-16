@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Sunil_PortFolio/static/css/main.bff48159.css",
+    "main.js": "/Sunil_PortFolio/static/js/main.bb42a114.js",
+    "static/js/453.aac68abc.chunk.js": "/Sunil_PortFolio/static/js/453.aac68abc.chunk.js",
+    "static/media/profile.jpg": "/Sunil_PortFolio/static/media/profile.d5727c378a3cbd8cbc60.jpg",
+    "index.html": "/Sunil_PortFolio/index.html",
+    "main.bff48159.css.map": "/Sunil_PortFolio/static/css/main.bff48159.css.map",
+    "main.bb42a114.js.map": "/Sunil_PortFolio/static/js/main.bb42a114.js.map",
+    "453.aac68abc.chunk.js.map": "/Sunil_PortFolio/static/js/453.aac68abc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bff48159.css",
+    "static/js/main.bb42a114.js"
+  ]
+}
